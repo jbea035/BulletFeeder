@@ -1,0 +1,17 @@
+Bullet Feeder Known Issues:
+
+- Process for assembling the bowl and base is not ideal.  Model should be modified to allow assembly using fasteners or 'snap-fitting'.  The goal is easy assembly along with non-destructive disassembly.
+
+- Wadcutters and semi-wadcutters don't sort nicely and will feed incorrectly (backwards).  Progressively bevelling (filing/sanding etc.) the edge of the center piece works for semi-wadcutters.  No known solution for full wadcutters (common problem with this style feeder).
+
+- Most testing has been with .45ACP and 9mm RN projectiles.  Further testing with other styles (particularly 9mm conical and the wadcutters mentioned previously) is needed.
+
+- No testing done with any kind of rifle projectile.  
+
+- No 'official' construction details present for a feed tube.
+
+- No testing done with presses other than Dillon XL650. Although the press itself shouldn't interfere with the operation, there may be clearance issues, depending on what is present above the toolhead, etc.
+
+- No good options provided for mounting the feeder next to or onto the press.  Ideally would provide an arrangement that hangs or screws onto the case feeder tower.
+
+- Adding cable management and an on-off switch mount for the bowl or motor mount would make sense.

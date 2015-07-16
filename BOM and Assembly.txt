@@ -1,0 +1,65 @@
+Additional items required:
+
+Double-Alpha Mr Bullet Feeder feed die and powder through flaring die.  The flaring die isn't strictly required but makes a MAJOR difference to the stability of the bullets in the case once they have been dropped from the die.
+
+36rpm Gearhead Motor (Jaycar http://www.jaycar.co.nz/Electromechanical-Components/Mechatronics/Motors-%26-Gearboxes/12V-DC-Reversible-Gearhead-Motors---36RPM/p/YG2734)
+
+Regular size microswitch with long arm and low activation force (Jaycar unit requires the spring to be stretched to weaken the switch, a better option would be to choose a specific device from Element14 or RS)
+
+Fasteners (Variety of M3 and M4 machine screws, washers, nuts and spring washers or nyloc nuts)
+
+12V battery (a single 7Ahr SLA house alarm type battery has given me 30-40 hours of runtime without noticeably slowing down or weakening) or 12V power supply capable of at least a couple of amps to supply startup current.
+
+Wire between motor, microswitch and battery.  Currently just wired with the positive to the motor going through the NC and common terminals of the microswitch.
+
+Wood for frame
+
+Tube to go between microswitch adapter and feed die adapter.  Currently made by boiling clear 3mm PLA filament to soften it and then wrapping it tightly around a 12mm dowel to create a good .45ACP capable flexible feed tube.  Alternatives that have been used are 12mm ID fuel hose and a metal-wrapped flexible shower-head hose.
+
+
+Assembly Process:
+
+- Clean the 'drive gear slot' that is in the side of the bowl.  It will likely have some strings hanging down and will generally just look ugly.  A file, knife or sandpaper should clean this up.  Verify that the drive gear will fit in the slot and rotate freely.
+
+- Press-fit bowl onto base.  Printers that print the lowest layer slightly wide should press fit.  Others may need tape or glue to hold during initial assembly.
+
+- Place the platter on the base with the 'gear teeth' down and then place center piece on top of the platter.  At this point, the underside of the platter can be lubricated with lithium grease or similar (avoid WD40 or similar liquid lubricants).  This is NOT REQUIRED assuming that the platter and base have been printed in PLA on glass with no raft.  I have had roughly 10k rounds (10+ hours of run time) through my prototype with no visible signs of wear.  Orient the center piece so that the mounting holes line up and the bullet drop hole in the center lines up with the hole in the base.  Fix the center in place with some M4 machine screws.  Verify that the platter rotates freely after this step without too much sideways 'slop'.
+
+- Check that the drive gear can engage the platter gear teeth through the slot in the side of the bowl and that the platter rotates when moved by the drive gear.
+
+- At this stage, the bowl can be glued to the base.  Superglue or hot glue work here.  Apply sparingly to avoid glueing the platter in place.  (Personally, I used a temperature controlled soldering iron set to ~200C and plastic welded the two pieces together at several points around the perimeter.  This has held up fine for many thousands of rounds, but probably isn't the easiest approach).
+
+- Attach the drive gear to the gearhead motor.  To do this, slot an M4 nut into the slot in the 'hub' part of the drive gear.  Place the drive gear onto the D-shaft of the gearhead motor, rotated such that the flat on the motor shaft is nearest the nut and bolt-hole in the hub.  Insert an M4 screw through the hole into the nut and tighten onto the D-shaft.  This doesn't need to be too tight.  If you see the hub appear to deform, don't tighten any further.  Try rotating the motor and drive gear separately, there shouldn't be any play between the two.
+
+- Insert the motor into the motor mount.  The orientation should be such that the 'points' in the 'teardrop' shapes for the M4 mounting holes point away from the drive gear.  Screws and nuts can be added to secure the mount to the motor but should be left loose so the motor can 'slip' in the mount.
+
+- Attach the motor mount to the outside of the bowl.  The 'teardrop' shapes in the mount should line up with the shapes on the bowl.  Fasten with countersunk M4 screws.  One suggestion is to slightly countersink the holes on the inside of the bowl to keep the heads low profile.  This avoids bullets jamming between the screws and the platter grooves.
+
+- Tighten the motor into the mount using the pinch screws.
+
+- At this point, test the setup by applying 12V to the motor.  The platter should rotate freely as the motor is powered.
+  - If the motor rotates in the motor mount, check that the platter and drive gear are free to move and then tighten the motor mount.
+  - If the drive gear slips on the motor shaft, check that the platter and drive gear are free to move and then tighten the gear screw.  If the screw has rotated in the hub, it may have damaged it and a new one may be required.
+  - Platter rotation shouldn't matter, but the feeder has been designed assuming the platter will be rotating clockwise when viewed from above.  If the platter is rotating backwards, swap the terminals on the motor.  Marking the terminals + and - once the rotation direction is established can be helpful for later.
+
+- Mount the bullet feeder to a piece of timber and clamp it such that the base is on a 45 degree angle with the ground.  The bullet drop outlet should be vertical.
+
+- Add some bullets (~100) into the bowl and power up the motor.  Verify that the bullets are picked up and ride around on the platter.
+
+- Mount the bullet wiper if required.  This piece ensures that, when using short bullets such as pistol projectiles, only one bullet is present in each slot of the platter.  Press nuts into the hex recesses on the wiper and add screws through the holes.  Place the wiper over the edge of the bowl at roughly the 10 o'clock position (assuming the bullet drop hole is at 12 o'clock) and attach it such that the bottom of the wiper is close to the platter without touching.  Re-test the action of the feeder afterwards.
+
+- Mount the microswitch into the feed die switch tube.  Test by dropping bullets through the tube.  Bullets should pass easily through and a stack of bullets in the tube should activate the switch reliably.  Some filing and adjustment may be required for this piece.  If bullets don't easily pass through the tube, ensure nothing is obstructing the switch lever.  Shortening the switch lever can make it move more freely, but may required more force to activate.  If the bullets don't have enough weight to activate the switch (the bullets jam against the lever) then either replace the switch with a lower activation force part or, if you're keen, the switch can be dismantled and the internal spring stretched slightly to lower the activation force.  The latter is extremely difficult and will likely result in lost parts or a malfunctioning switch, but it's better than just waiting for a new one.
+
+- Mount the bullet feed die and powder flare die in the press and adjust according to Double Alpha's instructions.  Verify operation by manually loading bullets into the top of the feed die.
+
+- Mount the feed die switch tube onto the top of the bullet feed die
+
+- Mount the feeder near the press.  Ideally, the dropper tube should be as close to in line with the feed die as possible and the bullet fall path should always be at least 45 degrees from horizontal, the steeper and shorter the fall, the more reliable the feed will be.  A mounting strategy that lets you easily adjust initially is helpful here.
+
+- Wire up the feeder motor via the microswitch.  The +12V from the battery/power supply should go to the common terminal on the microswitch.  The NC (Normally Closed) terminal on the switch should go to the + terminal of the motor.  The - terminal of the motor should go back to the - terminal of the battery.  To start with, this can just be alligator leads or similar, the motor will not draw significant amounts of current.
+
+- Verify that everything is working correctly by manually dropping bullets into the top of the tube to verify that the switch functions correctly (no bullets in tube - motor is running, bullets in tube - motor stops).  Cycle the press a few times to make sure that nothing is hanging up or in the way of the press moving parts.
+
+- Cut and fit the tube between the feed die adapter and the feeder outlet such that there are no 'sags' that bullets can get stuck in and that bullets slide freely from the outlet to the die adapter.  It also pays to fully cycle the feed die up and down and verify that there is no excess pressure exerted on the die or the feeder from the tube.  If the tube is too stiff then there will be resistance to the bullet feed die cycling and eventually this may cause the bullet feeder to move sideways and the feed die adapter to come off the feed die.  This is where a more flexible tube such as a PLA coil helps vs something more rigid like fuel hose.
+
+- Run the feeder and feed die for a few cycles without fully cycling the press to make sure that everything is functioning correctly.
