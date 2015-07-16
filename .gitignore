@@ -1,0 +1,3 @@
+#Ignore windows system files
+$*
+Thumbs.db
